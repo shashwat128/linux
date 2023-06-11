@@ -3,7 +3,6 @@
  * Generate opcode table initializers for the in-kernel disassembler.
  *
  *    Copyright IBM Corp. 2017
- *
  */
 
 #include <stdlib.h>
@@ -63,6 +62,7 @@ struct gen_opcode {
  * case the byte member always is zero, so that the mask is applied on
  * the (only) byte that contains the opcode.
  */
+
 static struct insn_type insn_type_table[] = {
 	{
 		.byte = 0,
